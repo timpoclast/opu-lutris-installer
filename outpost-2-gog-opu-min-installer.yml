@@ -1,0 +1,33 @@
+extends: outpost-2-divided-destiny
+
+name: Outpst 2: Divided Destiny U 
+game_slug: outpost-2-divided-destiny-u
+version: Installer
+slug: outpost_2_divided_destiny
+# runner: linux
+
+script:
+	variables:
+		ACTUALGAMEDIR: "$GAMEDIR/drive_c/GOG Games/Outpost 2"
+		VERSION: 1.4.1
+		INSTALLER: OPUInstaller-$VERSION.exe
+	game:
+	  args: /OPU
+		working_dir: $ACTUALGAMEDIR
+	  exe: Outpost2.exe
+	wine:
+	  overrides:
+	    winmm: n,b
+	  version: lutris-7.2-2-x86_64
+	files:
+	# - opu_installer: https://outpost2.net/files/op2/game/OPUInstaller-1.4.1.exe
+	- opu-installer: ~/Downloads/$INSTALLER
+	merge:
+		src: opu-installer
+		dest: $ACTUALGAMEDIR
+	installer:
+	- execute:
+		- file: $INSTALLER
+		- working_dir: $ACTUALGAMEDIR 
+
+
