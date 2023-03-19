@@ -1,0 +1,15 @@
+# based on  ~/.config/lutris/games/outpost_2_divided_destiny-<timestamp>.yml
+
+- "gog installer call": gog/setup_outpost_2_1.2_(37379).exe /SP- /NOCANCE
+- "get patch installer": https://outpost2.net/files/op2/game/OPUInstaller-1.4.1.exe
+- add dll override
+- add argument to game call ~/.config/lutris/games/outpost_2_divided_destiny-1679159│ub
+859.yml
+
+Additions
+- game:
+	args: /OPU
+
+- wine:
+	overrides:
+		winmm: n,b           
