@@ -1,15 +1,22 @@
-# based on  ~/.config/lutris/games/outpost_2_divided_destiny-<timestamp>.yml
+# TODO: Is there is a 'latest' for the OPU installer
 
-- "gog installer call": gog/setup_outpost_2_1.2_(37379).exe /SP- /NOCANCE
-- "get patch installer": https://outpost2.net/files/op2/game/OPUInstaller-1.4.1.exe
-- add dll override
-- add argument to game call ~/.config/lutris/games/outpost_2_divided_destiny-1679159│ub
-859.yml
+game:
+  args: /OPU
+  exe: /home/tim/.local/share/games/gog/outpost-2-divided-destiny/drive_c/GOG Games/Outpost
+    2/Outpost2.exe
+  launch_configs: null
+  name: Outpost 2
+wine:
+  overrides:
+    winmm: n,b
+  version: lutris-7.2-2-x86_64
+game_slug: outpost-2-divided-destiny
+name: 'Outpost 2: Divided Destiny'
+extends: outpost-2-divided-destiny
+files:
+- opu_installer: https://outpost2.net/files/op2/game/OPUInstaller-1.4.1.exe
 
-Additions
-- game:
-	args: /OPU
+script:
+
+- file1: https://example.com/gamesetup.exe
 
-- wine:
-	overrides:
-		winmm: n,b           
