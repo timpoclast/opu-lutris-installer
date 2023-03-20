@@ -1,3 +1,5 @@
+# lutris:gog:1494370738
+
 name: "Outpost 2: Divided Destiny U" 
 game_slug: outpost-2-divided-destiny-u
 version: Installer
@@ -5,11 +7,14 @@ slug: outpost_2_divided_destiny_u
 runner: wine 
 
 script:
+  # extends: outpost-2-divided-destiny
+  # extends: "gog:1494370738"
   extends: outpost-2-divided-destiny
+  # extends: 1494370738
   variables:
     ACTUALGAMEDIR: "$GAMEDIR/drive_c/GOG Games/Outpost 2"
-    VERSION: 1.4.1
-    INSTALLER: OPUInstaller-$VERSION.exe
+    # VERSION: 1.4.1
+    INSTALLER: OPUInstaller-1.4.1.exe
   game:
     args: /OPU
     working_dir: $ACTUALGAMEDIR
