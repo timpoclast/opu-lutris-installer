@@ -3,7 +3,16 @@
 ### Overview
 A Lutris installer of the [Outpost Universe](https://www.outpost2.net/outpost2.html) unofficial update for [Outpost 2](https://lutris.net/games/outpost-2-divided-destiny/). Written using the Lutris [Writing installers](https://github.com/lutris/lutris/blob/master/docs/installers.rst) docs.
 
-### Issues
+### Related issues
+https://github.com/lutris/lutris/issues
+
+2446, 2037, 3703
+
+https://discord.com/channels/512538904872747018/538903130704838656/818346384544497675
+
+https://forums.lutris.net/search?expanded=true&q=%22extends%22
+
+### Bugs
 Looks like the keyword is *service game* ie. <id> from <service> invoked by `-i` or GUI. At the moment, it seems this call is bypassed by extends?
 
 3 methods of install: 
