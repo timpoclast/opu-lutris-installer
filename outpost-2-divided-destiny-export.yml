@@ -1,0 +1,14 @@
+game_slug: outpost-2-divided-destiny_man
+gogid: '1494370738'
+name: 'Outpost 2: Divided Destiny'
+runner: wine
+script:
+  files:
+  - goginstaller: N/A:Select the installer from GOG
+  game:
+    exe: _xXx_AUTO_WIN32_xXx_
+  installer:
+  - autosetup_gog_game: goginstaller
+  system: {}
+slug: outpost_2_divided_destiny_man
+version: GOG

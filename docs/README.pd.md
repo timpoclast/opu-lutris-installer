@@ -3,12 +3,28 @@
 ### Overview
 A Lutris installer of the [Outpost Universe](https://www.outpost2.net/outpost2.html) unofficial update for [Outpost 2](https://lutris.net/games/outpost-2-divided-destiny/). Written using the Lutris [Writing installers](https://github.com/lutris/lutris/blob/master/docs/installers.rst) docs.
 
+### Two stages
+
+
+#### Export auto config
+Looks like game actions are defined in lutris/game\_actions.py which calls into lutris/game.py
+
+
+#### Use autoconfig from whatever 
+extends
+
+
+
 ### Related issues
 https://github.com/lutris/lutris/issues
 
 2446, 2037, 3703
 
+`in: requests_and_feedback in: writing_installers in: requests_and_feedback in: lutris_support extends`
+
 https://discord.com/channels/512538904872747018/538903130704838656/818346384544497675
+
+
 
 https://forums.lutris.net/search?expanded=true&q=%22extends%22
 
