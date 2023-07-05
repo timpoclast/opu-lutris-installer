@@ -58,4 +58,28 @@ launch\_install > install\_runners > launch\_installer commands > iter\_commands
 config explicitly doesn't get writting in the case of `extends`
 
 
+#### Context
+discord search:
+`in: lutris_support in: writing_installers requires extends`
+https://discord.com/channels/512538904872747018/546612632027922452/831109393407410176
+https://discord.com/channels/512538904872747018/546612632027922452/635247921050288129
+https://discord.com/channels/512538904872747018/546612632027922452/636132541459333121
+https://discord.com/channels/512538904872747018/546612632027922452/829371262454464524
+
+`extends`: 2016, https://github.com/lutris/lutris/compare/v0.4.1...v0.4.2
+  https://github.com/lutris/lutris/commit/61bdf56
+	https://github.com/lutris/lutris/issues/390
+	https://github.com/lutris/lutris/issues/2839
+https://discord.com/channels/512538904872747018/546612632027922452/706367368359837716
+https://discord.com/channels/512538904872747018/538903130704838656/818343688861777972
+
+
+`requires`: 2013
+  https://github.com/lutris/lutris/compare/282ac32...928bc5a
+  https://github.com/lutris/lutris/releases/tag/v0.3.2
+
+	https://github.com/lutris/lutris/issues/2835
+
+
+
 

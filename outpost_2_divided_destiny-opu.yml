@@ -1,0 +1,15 @@
+game:
+  args: /OPU
+  exe: /home/tim/.local/share/games/gog/outpost-2-divided-destiny/drive_c/GOG Games/Outpost
+    2/Outpost2.exe
+  launch_configs: null
+  name: Outpost 2
+wine:
+  overrides:
+    winmm: n,b
+  version: lutris-7.2-2-x86_64
+game_slug: outpost-2-divided-destiny
+name: 'Outpost 2: Divided Destiny'
+extends: outpost-2-divided-destiny
+files:
+- opu_installer: https://outpost2.net/files/op2/game/OPUInstaller-1.4.1.exe\
