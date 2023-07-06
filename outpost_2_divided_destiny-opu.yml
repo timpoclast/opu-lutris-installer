@@ -1,9 +1,12 @@
+# TODO: check for 'latest' OPU version/link
+# TODO: backup+restore saves folder, clear OPU folder, re-install patch to fix. Using input_menu?
+# TODO: uninstall behavior?
 # lutris:gog:1494370738
-name: "Outpost 2: Divided Destiny OPU" 
+name: "Outpost 2: Divided Destiny OPU"
 game_slug: outpost-2-divided-destiny-opu
 version: Installer
 slug: outpost_2_divided_destiny-opu
-runner: wine 
+runner: wine
 
 script:
   requires: outpost_2_divided_destiny
@@ -15,6 +18,7 @@ script:
     args: /OPU
     working_dir: $GAMEDIR/$WINEDIR
     exe: $GAMEDIR/$WINEDIR/Outpost2.exe
+  
   wine:
     overrides:
       winmm: n,b

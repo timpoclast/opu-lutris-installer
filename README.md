@@ -29,6 +29,23 @@ other installer.
 for early install, a bunch of properties are set e.g. “install”,
 “service”
 
+## Issues
+`extends` doesn't work with auto installers.
+`requires` blocks modification of the `game` section.
+
+It isn't currently possible to update the `game` portion of 
+
+i.e.
+Goal: Create installer for the GoG release of Outpost 2: Divided Destiny.
+
+Current work around: Wrapper script which currently:
+    * calls installer
+    * replaces 
+
+Issue: 
+
+To comply with EULA/TOU, a community patch for Outpost 2: Divided Destiny, called OPU (OutPost Universe) is activated by callng the main executable with an arg. 
+
 Still investigating but it looks like calling other installers
 (`extends`/`requires`) may only work for [conventional
 installers](https://github.com/lutris/lutris/blob/5564cd803acb23beaf146a39189d2388425cca10/lutris/api.py#L162)
