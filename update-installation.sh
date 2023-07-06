@@ -30,6 +30,8 @@ set_env() {
 	WINEDIR="drive_c/GOG Games/Outpost 2"
 
 	install_dir="$GAMEDIR/$WINEDIR"
+
+	saves_dir="$XDG_CONFIG_HOME/games/saves/opu"
 }
 
 get_config_file() {
@@ -55,7 +57,9 @@ install() {
 			with_entries(select(.key != \"script\"))" \
 			"$script_file" -P > "$config_file"
 	END_COMMENT
-	# 
+	
+	# reestore saves
+	cp -r "$saves_dir/" "$install_dir/OPU/saves"
 }
 
 uninstall() {
@@ -66,7 +70,7 @@ uninstall() {
 	# TODO: Uninstall/remove lutris
 	# lutris -u "$script_dir/$script_name"
 
-	cp -r "$install_dir/OPU/saves" "$(xdg-user-dir DESKTOP)"
+	cp -r "$install_dir/OPU/saves" "$saves_dir/" 
 
 	rm -r "$install_dir/OPU"
 }
